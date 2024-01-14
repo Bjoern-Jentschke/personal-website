@@ -6,54 +6,81 @@
     background-color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
+    position: relative;
+    height: 100vh; /*How to set the height of the total side?*/
   }
 
   header {
-    border: solid white;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin: 0px 0 10px 12.5%;
+    gap: 100px; /* why can I not use the gap property for the flexbox here? */
   }
 
   .navigation {
-    border: solid white;
   }
 
   .item1, .item2, .item3, .item4 {
-    border: solid white;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding-right: 15px;
   }
 
   aside {
-    border: solid white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    right: 87.5%;
+    bottom: 0;
+    height: 100%; /*How to set the height equal to the height of the body despite having a margin at the top?*/
   }
 
-  .logo_picture {
-        border: solid red;
+  .placeholder {
+        align-self: center;
+        font-size: 80px;
+        position: relative;
+        bottom: 100px; /*how to align item independently in the flexbox at the top?*/
   }
 
   .link1, .link2, .link3 {
-    border: solid white;
+    padding-left: 25%;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 50vh; /*how can I align items at the bottom of a page while setting flex-direction property on column?*/
   }
 
   main {
-    border: solid white;
-  }
-
-  .contacts {
-    border: solid white;
-  }
-
-  .mobil, .mail {
-    border: solid white;
+    margin-left: 12.5%;
+    height: 25vh; /*any better way to set the height? */
+    position: relative;
   }
 
   section {
-    border: solid white;
+    position: absolute;
+    top: 55%; /*any better solution to set the height?*/
   }
 
   .about-me {
-    border: solid white;
   }
 
   .text {
-    border: solid white;
+    width: 40%;
+    height: 450px; /*again problems with setting the height?*/
+    font-size: 60px;
+    padding-left: 30px;
+  }
+
+  footer {
+    margin-left: 12.5%;
+    position: fixed;
+    left: 37.5%;
+    bottom: 0%;
+    transform: translate(-50%);
   }
 
 
